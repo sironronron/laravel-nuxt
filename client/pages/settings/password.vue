@@ -52,9 +52,13 @@ export default {
 
   methods: {
     async update () {
-      await this.form.patch('/settings/password')
+      try {
+        await this.form.patch('/settings/password')
 
-      this.form.reset()
+        this.form.reset()
+      } catch (e) {
+        return
+      }
     }
   }
 }

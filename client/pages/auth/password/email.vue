@@ -45,11 +45,15 @@ export default {
 
   methods: {
     async send () {
-      const { data } = await this.form.post('/password/email')
+      try {
+        const { data } = await this.form.post('/password/email')
 
-      this.status = data.status
+        this.status = data.status
 
-      this.form.reset()
+        this.form.reset()
+      } catch (e) {
+        return
+      }
     }
   }
 }
