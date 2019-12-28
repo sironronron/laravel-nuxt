@@ -23,3 +23,17 @@
   from { transform: rotate(0deg); }
   to { transform: rotate(359deg); }
 }
+
+.btn-facebook {
+  color: #fff;
+  background-color: #3b5998;
+  border-color: #3b5998;
+  box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11), 0 1px 3px rgba(0, 0, 0, 0.08);
+}
+
+.btn-google {
+  color: #fff;
+  background-color: #D62D20;
+  border-color: #D62D20;
+  box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11), 0 1px 3px rgba(0, 0, 0, 0.08);
+}
